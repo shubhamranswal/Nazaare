@@ -1,6 +1,6 @@
 # 📸 Nazaare
 
-> A **free**, personal photography site capturing my unique POV of this world 🌍 - nature, mountains 🏔️, scenic views 🌅and more.  
+> A **free**, personal photography site capturing my unique POV of this world 🌍 - nature, mountains 🏔️, scenic views 🌅 and more.  
 > Clean. Open. Yours to explore and download! 🚀
 
 ---
@@ -8,9 +8,11 @@
 ## ✨ Features
 
 - 📱 Responsive & modern photo gallery  
-- ⬇️ Download high-resolution images freely  
+- ⬇️ Download high-resolution images freely
+- 🌓 Dark mode / Light mode toggle for comfy browsing  
 - 🔄 Monthly photo updates - always something fresh  
-- ⚡ Built with pure **HTML**, **CSS**and **JavaScript**  
+- 🚀 Lazy loading images for fast initial load and smooth performance  
+- ⚡ Built with pure **HTML**, **CSS** and **JavaScript**  
 - 🌐 Hosted on **GitHub Pages** for free and fast access  
 
 ---
@@ -63,7 +65,7 @@ That’s it! Your photo gallery is now live 🌐
 
 ## 🛠 Tech Stack
 
-* ⚙️ **HTML + CSS + JavaScript** - no frameworks, just clean code
+* ⚙️ **HTML + CSS + JavaScript** - clean, framework-free, and performant
 * 🖼 **EXIF.js** - extracts camera metadata from images
 * 🌍 **GitHub Pages** - free hosting for static sites
 
@@ -73,12 +75,11 @@ That’s it! Your photo gallery is now live 🌐
 
 ### 🧠 Code
 
-The site code is licensed under the **[MIT License](LICENSE)** - use, modifyand share freely.
+The site code is licensed under the **[MIT License](LICENSE)** - use, modify and share freely.
 
 ### 📷 Photos
 
-All photos are published under **[Creative Commons Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/)**
-→ You're free to **use, share, remix, or download** - no credit needed, but appreciated.
+All photos are published under **[Creative Commons Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/)** - You're free to **use, share, remix, or download** - no credit needed, but appreciated.
 
 ---
 

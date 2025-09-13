@@ -79,7 +79,7 @@ function renderGallery() {
     const div = document.createElement("div");
     div.className = "gallery-item";
     div.innerHTML = `
-      <img src="assets/photos/${photo.filename}" alt="${photo.title}" />
+      <img src="assets/photos/${photo.filename}" alt="${photo.title}" loading="lazy" />
       <div class="info">
         <h2>${photo.title}</h2>
         <p>${photo.description}</p>
