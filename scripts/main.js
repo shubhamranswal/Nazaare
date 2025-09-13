@@ -210,3 +210,23 @@ function formatDateTime(dateStr) {
     hour12: true
   });
 }
+
+const THEME_BTN = document.getElementById("theme-toggle-btn");
+const BODY = document.body;
+
+// Load saved mode from localStorage
+if (localStorage.getItem("theme") === "dark") {
+  BODY.classList.add("dark-mode");
+} else {
+  BODY.classList.remove("dark-mode");
+}
+
+THEME_BTN.addEventListener("click", () => {
+  BODY.classList.toggle("dark-mode");
+  const isDark = BODY.classList.contains("dark-mode");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  THEME_BTN.textContent = isDark ? "🌙" : "☀️";
+});
+
+// Set initial icon
+THEME_BTN.textContent = document.body.classList.contains("dark-mode") ? "🌙" : "☀️";

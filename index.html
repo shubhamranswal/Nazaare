@@ -1,65 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nazaare | Every Frame Tells a Story</title>
-  <meta name="description" content="Explore stunning photography of nature, mountains, and landscapes captured through my lens." />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <header class="site-header">
-    <div class="logo-container">
-      <img src="./assets/logo.png" alt="Nazaare" class="logo-img" />
-      <p class="site-tagline">Every Frame Tells a Story</p>
+    <title>Nazaare | Every Frame Tells a Story</title>
+    <meta
+      name="description"
+      content="Explore breathtaking nature, landscapes, and scenic photography through my lens. Free to view, share, and download."
+    />
+    <meta
+      name="keywords"
+      content="photography, nature, landscapes, mountains, free photos, Nazaare, Shubham Ranswal"
+    />
+    <meta name="author" content="Shubham Singh Ranswal" />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Nazaare | Every Frame Tells a Story" />
+    <meta
+      property="og:description"
+      content="Explore breathtaking photography of nature and landscapes. Open and free to use."
+    />
+    <meta
+      property="og:image"
+      content="https://shubhamranswal.github.io/Nazaare/assets/logo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://shubhamranswal.github.io/Nazaare/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nazaare | Every Frame Tells a Story" />
+    <meta
+      name="twitter:description"
+      content="Free personal photography site — nature, landscapes, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://shubhamranswal.github.io/Nazaare/assets/logo.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- EXIF.js (for reading image metadata) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <img src="./assets/logo.png" alt="Nazaare" class="logo-img" />
+        <p class="site-tagline">Every Frame Tells a Story</p>
+      </div>
+
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn" title="Toggle dark/light mode">🌓</button>
+      </div>
+
+      <div class="search-theme-container">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search photos..." />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="gallery" id="gallery">
+        <!-- JS will inject image thumbnails here -->
+      </div>
+      <div class="pagination" id="pagination">
+        <!-- JS will create pagination buttons here -->
+      </div>
+    </main>
+
+    <div class="lightbox" id="lightbox" style="display: none">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next" id="lightbox-next">&#10095;</button>
     </div>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Search photos..." />
-    </div>
-  </header>
 
-  <main>
-    <div class="gallery" id="gallery">
-      <!-- JS will inject image thumbnails here -->
-    </div>
-    <div class="pagination" id="pagination">
-      <!-- JS will create pagination buttons here -->
-    </div>
-  </main>
+    <footer class="site-footer">
+      <nav class="footer-links">
+        <a href="https://github.com/shubhamranswal/Nazaare" target="_blank"
+          >GitHub</a
+        >
+        <a href="https://in.linkedin.com/in/shubhamranswal" target="_blank"
+          >LinkedIn</a
+        >
+      </nav>
 
-  <div class="lightbox" id="lightbox" style="display: none;">
-    <span class="lightbox-close" id="lightbox-close">&times;</span>
-    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
-    <div class="lightbox-caption" id="lightbox-caption"></div>
-    <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
-    <button class="lightbox-next" id="lightbox-next">&#10095;</button>
-  </div>
+      <div class="footer-bottom">
+        <p class="footer-attribution">
+          Built with <span class="heart">❤️</span> by
+          <a href="https://shubham-ranswal.web.app/" target="_blank"
+            >Shubham Singh Ranswal</a
+          >
+        </p>
 
-  <footer class="site-footer">
-<nav class="footer-links">
-    <a href="https://github.com/shubhamranswal/Nazaare" target="_blank">GitHub</a>
-    <a href="https://in.linkedin.com/in/shubhamranswal" target="_blank">LinkedIn</a>
-</nav>
+        <div class="footer-license">
+          <p>
+            © <span id="footer-year"></span> Nazaare. All images and content are
+            licensed under
+            <a
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+              target="_blank"
+              >CC BY-NC-ND 4.0</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
 
-  <div class="footer-bottom">
-    <p class="footer-attribution">
-      Built with <span class="heart">❤️</span> by
-      <a href="https://shubham-ranswal.web.app/" target="_blank">Shubham Singh Ranswal</a>
-    </p>
-
-    <div class="footer-license">
-      <p>
-        © <span id="footer-year"></span> Nazaare. All images and content are licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>.
-      </p>
-    </div>
-  </div>
-</footer>
-
-
-  <script src="./scripts/main.js"></script>
-</body>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
