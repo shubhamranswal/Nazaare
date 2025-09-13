@@ -87,6 +87,7 @@ function renderGallery() {
           📍 ${photo.location || "Unknown"} • 📅 ${formatDateTime(photo.dateTaken) || "Unknown"} • 📷 ${photo.device || "Unknown"}
         </p>
         <div class="tags">${photo.tags?.map(tag => `<span class="tag">${tag}</span>`).join("") || `<span class="tag">None</span>`}</div>
+        <div class="actions"><a href="assets/photos/${photo.filename}" download class="download-btn">⬇️ Download</a></div>
       </div>
     `;
     div.addEventListener("click", () => openLightbox(start + i));
@@ -153,6 +154,7 @@ function openLightbox(index) {
     <p>${photo.description}</p>
     <p>📍 ${photo.location || "Unknown"} • 📅 ${formatDateTime(photo.dateTaken) || "Unknown"} • 📷 ${photo.device || "Unknown"}</p>
     <p class="tags" style="margin-top: 0; justify-content: center;">Tags: ${photo.tags?.join(", ") || "None"}</p>
+    <a href="assets/photos/${photo.filename}" download class="download-btn">⬇️ Download Photo</a>
   `;
   LIGHTBOX.style.display = "flex";
   document.body.style.overflow = "hidden";
