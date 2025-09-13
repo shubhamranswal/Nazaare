@@ -1,0 +1,93 @@
+[
+  {
+    "filename": "BDZZ6799.JPG",
+    "title": "Golden Sunrise",
+    "description": "Sunrise over the mountains with mist at dawn.",
+    "tags": ["sunrise","mountains","mist"],
+    "location": "Himalayas, India"
+  },
+  {
+    "filename": "CKQE2744.JPG",
+    "title": "Forest Path",
+    "description": "A peaceful trail in dense forest.",
+    "tags": ["forest","path","nature"],
+    "location": "Aarey Forest, Mumbai"
+  },
+  {
+    "filename": "DODB0943.JPG",
+    "title": "Desert Dunes",
+    "description": "Rolling dunes under golden light.",
+    "tags": ["desert","sand","sunset"],
+    "location": "Thar Desert"
+  },
+  {
+    "filename": "ESYZ0253.JPG",
+    "title": "Lake Reflection",
+    "description": "Mirror-like water with mountain reflection.",
+    "tags": ["lake","reflection","water"],
+    "location": "Lake Tahoe, USA"
+  },
+  {
+    "filename": "IMG-7169.JPG",
+    "title": "Traveler’s Rest",
+    "description": "Solitary figure resting under a tree in open field.",
+    "tags": ["travel","rest","solitude"],
+    "location": "Rajasthan, India"
+  },
+  {
+    "filename": "IMG-7554.JPG",
+    "title": "Trail into Woods",
+    "description": "Trail light filtering through dense woods.",
+    "tags": ["woods","trail","light"],
+    "location": "Black Forest, Germany"
+  },
+  {
+    "filename": "IMG-9254.JPG",
+    "title": "City Glow",
+    "description": "City lights and reflections at dusk.",
+    "tags": ["city","lights","dusk"],
+    "location": "New York City, USA"
+  },
+  {
+    "filename": "IMG-9270.JPG",
+    "title": "Milky Way",
+    "description": "Stars blazing across the night sky.",
+    "tags": ["night","stars","milkyway"],
+    "location": "Atacama Desert, Chile"
+  },
+  {
+    "filename": "IMG_7361.JPG",
+    "title": "Ocean Wave",
+    "description": "Powerful wave crashing onto shore.",
+    "tags": ["ocean","wave","power"],
+    "location": "Oregon Coast, USA"
+  },
+  {
+    "filename": "PCOJ2741.JPG",
+    "title": "Temple Silhouette",
+    "description": "Silhouette of ancient temple at sunset.",
+    "tags": ["temple","silhouette","sunset"],
+    "location": "Angkor Wat, Cambodia"
+  },
+  {
+    "filename": "UYQX4798.JPG",
+    "title": "Mountain Peak",
+    "description": "Snow-capped mountain peak above clouds.",
+    "tags": ["mountain","snow","peak"],
+    "location": "Swiss Alps"
+  },
+  {
+    "filename": "VFUZ3447.JPG",
+    "title": "Autumn Leaves",
+    "description": "Leaves turning amber and red in autumn forest.",
+    "tags": ["autumn","leaves","forest"],
+    "location": "Vermont, USA"
+  },
+  {
+    "filename": "VVUH7678.JPG",
+    "title": "Above the Clouds",
+    "description": "Flying above the clouds at sunrise.",
+    "tags": ["clouds","sunrise","sky"],
+    "location": "Over Himalayas"
+  }
+]
