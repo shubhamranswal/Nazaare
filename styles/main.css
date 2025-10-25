@@ -425,6 +425,10 @@ body.dark-mode .footer-license {
   transition: background-color 0.3s ease;
 }
 
+.download-btn[aria-disabled="true"] { 
+  cursor: not-allowed; 
+}
+
 .download-btn:hover {
   background-color: #5c6bc0;
   text-decoration: none;
