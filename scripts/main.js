@@ -11,7 +11,7 @@ const PHOTOS_PER_PAGE = 6;
 
 // Inline, theme-friendly SVG fallback (uses currentColor so it adapts to dark/light modes)
 const IMG_FALLBACK_SVG = `
-  <svg viewBox="0 0 64 48" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <svg viewBox="0 0 64 48" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Image not available">
     <title>Image not available</title>
     <rect x="1" y="1" width="62" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.18" />
     <g transform="translate(6,6)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
