@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" width="640" height="480" aria-hidden="true" role="img">
+  <title>Image not found</title>
+  <rect x="1" y="1" width="62" height="46" rx="4" fill="none" stroke="#999" stroke-width="1.6" opacity="0.18" />
+  <g transform="translate(6,6)" fill="none" stroke="#999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="52" height="36" rx="3" opacity="0.06" />
+    <path d="M4 28 L18 14 L30 26 L44 10 L56 28" opacity="0.9" />
+    <circle cx="10" cy="10" r="4" fill="#999" opacity="0.12" />
+  </g>
+</svg>
